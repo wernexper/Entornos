@@ -1,1 +1,89 @@
 
+Entornos
+    Teoria 
+analizae el software que hacemos 
+
+
+      Diseño y realizacion de preuebas 
+
+realizacion de pruebas : procedimientos y casos de pruebas 
+
+tipos de pruebas
+  caja negra 
+  caja blanca 
+  
+  Calida del software 
+  
+  planificacion 
+  automatizaciond elas priebas 
+  pruebas de integracion 
+  pruebasd de aceptacion
+  pruebas unitarias 
+  
+  
+  Herramientas de depuracion : JUnit
+  
+  Edsger Dijkstra
+  
+  Procedimieto de pruebas 
+  se define como la definicion de objetobo que es lo que ba aprobar y como se va aprobar 
+  el objetibo de las puebas no tiene que ser detectar errores analizar rendimiento 
+  pude ser un rediento objeto que se tengfa unas caracteristocas determinadas 
+  que no solo tenga errores  es lo que buscamos 
+   cuando se defiene los procedimentos  se tiene qeue seleccionar las personas que hacen las priuebas y los prametrosa por los que va realizar 
+  ademas del proigramador tendira qie interbenor un quepo exzterno al programador 
+  si emos diseñado de acuedo 
+  
+  es imposible porbar todo  se puerdan realizr  y que todo eso este arreglado lo errores que estan en produccion lo que se busca el numero de errores para ello el procediemotrn 
+  tendra que tener un plan de prueba ( el documento que detallara las pruebas que va realizar)
+  
+  los aspecto que generalente cubre son: introdiccion(objetibos y la estrategia) Modulos o partes de software por probar ( se detalla lo que va a probar)
+  Caracteristicas del dofware que se va a probar 
+  Caracteristicas del software al que no se le van a hacer pruebas el enfoque de las pruebas (las presonas responsables planificaon )
+  criterios de validez o invalidez del software 
+  el proceso de pruebas 
+  los requerimientois de entornos (heramientas software necesario)
+  
+  Aprobacion del plan ( se vean las pruebas que se estan haciendo)
+  
+  
+  
+      Casos de prueba
+  
+  Buscar fallos
+  si hacemos una prueba no tener reduncia en las puebas 
+  las pruebas no pueden ser ni muy sensillas y faciles (mientras mas complejo sea es mucho mas dificil que se detecte el fallo)
+  
+  
+  Codificaion u ejecuion 
+  
+  unavex realizada los casos de prueba eha yque generara las condiionesnecesarios para poder generara los caos de prueba
+  
+  para ello se suele generara un conjunto de datos que los que se van a generar esos datos tiene que incluir (datos validos, datos invalidos, datos fuera de rrango y datos dispratados)
+  
+  luego puede setr necesrio automa tizar esto con lo que serian necesrio preparacion de software, realizar la carga del sistema, realizar un pporceso de carga del sistema 
+  para terminar este punto:
+  textos tecions
+  
+  Caso de pruebas :
+    como el conjunto de entradas, condiciones de ejecucuin de salidas esperadas que forman parte de las pruebas a un software 
+   
+   Fiabilidad 
+    probabilidada que un sofware cumpla sus funciones por un tiempo determinado 
+    
+   RTF:
+      (revicion tecnica formal) la realiza el auditor y el desarrollador de software 
+    Tester
+        profecional independiente (programador con grandes conocimiento)
+        
+    Version alfa de in software 
+    
+      es la primera fase de la version (las pruebas las ahce el desarrollador )
+      
+      Version beta :
+          versionq que prueba el cliente 
+      version release
+        la que se procede a su distribucion y venta 
+    
+  
+  
