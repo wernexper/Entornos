@@ -1,1 +1,194 @@
 
+
+1.- Una vez cargada un array TB_NUM (10, 15) se desea:
+a) obtener un array unidimensional TB_FIL, cuyo primer elemento guarde la suma total de todos los elementos de la primera fila de TB_NUM,
+su segundo elemento guarde la suma de la segunda fila de TB_NUM y, así sucesivamente hasta la décima fila.
+
+b) obtener un array unidimensional TB_COL, cuyo primer elemento guarde la suma total de todos los elementos de la primera columna de TB_NUM,
+su segundo elemento guarde la suma de la segunda columna de TB_NUM y, así sucesivamente hasta la decimoquinta fila.
+
+
+2.- Una vez cargada un array TB_2019 (12,30) en la que se almacenan las ventas totales de una empresa durante cada día 
+de cada mes (se supone que todos los meses tienen 30 días) del año 2019 (las filas representan a los meses y las columnas a los días). Se desea calcular:
+a) ¿Cuál es la media de las ventas totales?
+b) ¿Cuál es la media de las ventas de cada mes?
+c) ¿Qué mes se han hecho más ventas?
+d) ¿Cuál es la media de las ventas de cada día?
+e) ¿Qué día se han hecho más ventas?
+
+
+
+<1>
+Inicion
+  <Cargar tabla>
+  <Filas>
+  <columnas>
+ Fin
+ 
+ <Filas>
+ Inicio
+ Para i desde 1 a 10
+  tb_fil(i)=0
+  Para desde 1 a 15
+    tb_fil(i)=tb_fil(i)+tb_num(i,j)  
+  Fin_para
+ 
+ Fin_para
+ 
+ Fin
+ 
+ 
+ 
+ 
+ <columnas>
+ Inicio
+  
+  para j de 1 a 15
+    tb_col(j)=0
+    para i de 1 a 10
+     tb_col(j)=tb_col(i)+tb_num(i,j)
+    Fin_para
+  Fin para 
+ Fin
+ 
+ 
+ 
+ <2>
+ 
+ Inicio
+ <cargar_tb_2019>
+ <cargar_tb_mes>
+ <cargar_tb_dia>
+ <Mes>
+ <dia>
+ <total>
+ Fin
+ <totla>
+ inicio
+  T_tot=0
+  parai desde 1 a 12
+    para ji de 1 a 30
+      t_tot=t_tot+tb_2019(i,j)
+    Fin para
+     imprimir &t_tot/((i+1)*(j-1))
+     
+   Fin para
+   
+   
+ <cargar_tb_mes>
+ inicio
+  praa i de 1 12
+    tb_mes(i)=0
+    para j de 1 a 30
+      tb_mes(i)=tb(i)+tb_2019(i,j)
+    Fin para
+  fin para
+ Fin
+ 
+ <cargar_tb_Dia>
+ Inicio
+    para j de 1 a 30
+      para i desde 1 a 12
+        tb_dia(i)=tb_dia(i)+tb_2019(i,j)
+      Fin_pàra
+    Fin para
+ Fin 
+ 
+ 
+ 
+ <mes>
+ Inicio
+  max_mes=tb_mes(1)
+  max_pos=1
+  para i de 1 12
+    Imprimir tb_mes(i)/30
+    si tb_mes(i)>max_mes
+    entonces
+      max_mes=tb_mes(i)
+      max_pos=i
+   fin para 
+   segun max_pos hacer
+   =1
+   Iprimir"Enero"
+   =2
+   Iprimir"febrero"
+   .....
+   ......
+   ......
+   ......
+   
+ Fin
+ 
+ 
+ <dia>
+ inicio
+ 
+ 
+ Fin 
+ 
+ 
+/* tb_2019(12,30)
+(col1)      i,j
+1 2 3 4 5 8 10 20 30 (fila 1)
+2 . . . . . . . . .  (fila 2)
+5 . . . . . . . . .  (fila 5)
+9 . . . . . . . . . 
+12. . . . . . . . .  (fila 12)
+*/
+
+//se conseidera una tabla tridimencional que almacena las nota de los 30 alumnos de una calase en cada una de las 3 evaluaciones de 4 asignaturas 
+
+<cargar_tb>
+Inicio
+para h de 1 a 30
+  para i de 1 a 3
+    para j de 1 a 4
+      num=tb_notas(h,i,j)
+    fin para  
+  fin para 
+Fin para 
+
+Fin
+<suma totla>
+
+inicio
+t_tot=0
+para h de 1 a 30
+  para para i de 1 a 3
+    para j de 1 a 4
+      t_tot=t_tot+tb_notas(h,i,j)
+    fin para
+  fin para
+fin para
+imp "la suma total es "&t_tot
+fin 
+ de cada alumno la suma de todas sus notas 
+ 
+ 
+ 
+ 
+ // imprima el valor de los sub indices  donde se encuentra el elemto maximo de una tabal numeriac de 3 dimenciones tb_num(2,3,4)
+ 
+ Inicio
+ max=0
+ para h de 1 a 2
+  para i de 1 a 3 
+    para j de 1 a 4
+      si tb_num(h,i,j)>max
+        max_h=h
+        max_i=i
+        max_j=j
+    fin para 
+  Fin para
+ Fin para
+ imprimir "los sub indices son: "& max_h & max_i & max_j & 
+ 
+ 
+ fin
+ 
+ 
+ 9312
+ 
+ para i desde 1 a 4
+  
+ fin para 
