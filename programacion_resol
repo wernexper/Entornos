@@ -1,0 +1,158 @@
+
+----------------
+//tb_num(5)
+Inicio
+para j de 1 a 4
+menor=1000
+  para i de j a 5
+    si tb_num(i)< menor
+    menor=tb_num(i)     
+  Fin para
+  tb_num(j)=menor
+  
+fin_para
+
+Fin
+
+6 8 4 7 5
+
+-----------
+<menores>
+Inicio
+para i desde 1 a (N-1)
+  min_ele=hv
+  para j de i a N
+    si tb(j)<mi_ele
+      entoces
+        min_ele=tb(j)
+        pos_ele=j
+  Fin para
+  <porc_intercambio>
+Fin para
+fin
+-------------
+<proc_intercambio>
+Inicio
+  aux=tb(i)
+  tb(i)=tb(pos_ele)
+  tb(pos_ele)=aux
+Fin
+-------------
+
+
+Metodo ascendente
+
+<burbuja_asc>
+Inicio
+sw_camb="s"
+  Mientras sw_camb="s"
+    sw_camb =="n"
+    para i desde 1 a (n-1)
+      si (tb(i)>tb(i+1))
+      entonces
+        <proc_interc>
+        sw_camm="s"
+      Fin_si
+    fin para 
+  Fin_mientras
+<proc_interc>
+Inicio
+  aux=tb(i) ->15
+  tb(i)=tb(i+1) ->40
+  tb(i+1)=aux ->40
+fin 
+
+ascendente 
+-------------------
+<shell_asc>
+inicio
+s=n
+mientras s!=1
+  s=ent((s+1)/2)
+  sw_camb=="si"
+  mientras sw-camb="si"    
+    sw_cam="no"
+    i=1
+    Mientras(i+s>tb(i+s))
+      si(tb(i)>tb(i+s))
+        entonces
+        <proc_interc>
+        sw_camb="si"
+       fin_si
+       i=i+1
+    fin mientras
+  Fin mientras
+Fin mientras
+Fin
+   <proc_interc>
+   inicio
+      aux=tb(i)
+      tb(i)=tb(i+s)
+      tb(i+s)=aux
+   Fin
+----------------------------
+menores a mayorshasta  50
+hasta mayores de 200 burbuja 
+mas de 200 shell
+dada una tabala tb_lot(52)
+que alamacena los numeros premiados de la loteria de los premios de la loteri del año 2019 se pide odenar la tabla acendente mente 
+
+Inicio
+<carga tb_lot>
+<ordenar>
+Fin
+---------
+<ordenar>
+inicio
+menor=hv
+para j de 1 a 51
+  para i desde j a 52 
+    si tb_lot(i)<mayor
+      tb_lot(j)=tb_lot(i)
+      aux=tb_lot(j)
+      tb_lot(i)=aux
+    fin si  
+  fin_para 
+fin_para
+fin
+--------
+
+
+
+tb_lot(52)2019  alamcena premios
+tb_fech(52)2019 alamcena fechas
+de marea corespondiente
+se desea alamcenar ambas tablas descendentemente por el numero premiado 
+por el metodo premio
+
+<shell_desc>
+inicio
+s=n
+mientras s!=1
+  s=ent((s+1)/2)
+  sw_camb=="si"
+  mientras sw_camb="si"    
+    sw_cam="no"
+    i=1
+    Mientras(i+s<=52)
+      si(tb_lot(i)<tb_lot(i+s))
+        entonces
+        <proc_interc>
+        sw_camb="si"
+       fin_si
+       i=i+1
+    fin mientras
+  Fin mientras
+Fin mientras
+Fin
+   <proc_interc>
+   inicio
+      aux=tb_lot(i)
+      tb_lot(i)=tb(i+s)
+      tb_lot(i+s)=aux
+      
+      aux2=tb_fech(i)
+      tb_fech(i)=tb(i+s)
+      tb_fech(i+s)=aux2
+   Fin
+
