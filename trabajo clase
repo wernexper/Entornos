@@ -1,0 +1,57 @@
+1.- Se desea introducir por el teclado una posición y un valor,
+e intercalar el mismo, en la posición solicitada de la tabla numérica TB_NUM (100), 
+que se supone desordenada (el elemento que inicialmente se encontrase en la posición 100 desaparecería).
+
+Inicio
+pos=0
+valor=0
+  para i desde 1 a 100
+    introducir valor
+    introducir pos
+    tb_num(pos)=valor    
+  Fin para 
+Fin
+
+2.- Introducir un valor desde el teclado e intercalarlo
+en su posición correcta dentro de la tabla numérica,
+supuestamente ordenada, TB_NUM (100),
+
+Inicio
+valor=0
+introducir valor 
+para i de 1 a 99
+  si tb_num(i)>valor 
+  entonces
+    aux=tb_num(i)
+    tb_num(i)=valor
+    para j desde i+1 a 98
+      tb_num(j)=aux
+      aux=tb_num(j+1)     
+    fin para
+  fin_si
+      
+Fin_para
+
+  
+Fin
+
+3.- A partir de dos tablas numéricas, TB1_NUM y TB2_NUM,
+de 100 y 60 elementos respectivamente, y ordenadas ascendentemente,
+se desea obtener una tercera tabla, TB3_NUM, que sea la fusión de ambas.
+Inicio
+  para i desde 
+fin
+
+4.- Dada la matriz numérica, TB_NUM (15, 25), se desea diseñar el algoritmo 
+para ordenar los elementos de la fila 3 ascendentemente, dejando los demás como estaban (MENORES).
+
+Inicio
+mayor=0
+  para i desde 1 a 25
+    si tb_num(3,i)>mayor
+    entonces
+      
+        
+  Fin para 
+
+Fin
