@@ -1,0 +1,31 @@
+Pruebas de caja negra 
+1 clases de equivalencia de datos   
+2 valores limites 
+3 interfaces
+
+de quivalencia :
+a) entre 8 y 10 caracteres            Coreccta: 8 9 10 caracteres     invalida  <8 y >10  
+b)letra y numeros:                             :                         solo letras  - solo numeros            
+    una muniscula y una mayuscula              :                          todo mayus - todo min
+    no empieces por numero                     :                          empiesa por numero
+    No puede terner caracteres especiales      :                          tiene caracteres especiales
+    
+ 
+ valores limites :
+ en aquiello casos en los queno se pueda superar a eso se le llama buscar los limites de la fontera 
+ 
+ 
+ interfaces(GUI):
+  soloete contener usa serie de objetos con una serio de propiedades 
+   los objetos van tomando valores durante la ejecucion del programa 
+   el usuario vadando valores interactuando con los objetos de la interfas
+   dependiendo de lo que se haga saldra una cosa u otra 
+   
+   se testea: usando el manual de usuario 
+   meter datos reales comprobamos lo que va surgiendo es lo que se espera de la interfaz
+   
+   usabilida de la interfas:
+      analizar si ovjeto que se va a evaluar da el resultado esperado por el usuario
+      el tester deve ser el usuario 
+      
+      
