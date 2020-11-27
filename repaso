@@ -1,0 +1,51 @@
+1.Se introduce por teclado sin ningún orden el id numérico del alumno 
+y la nota respectiva de los 500 alumnos de una promoción de selectividad 
+en la materia de matemáticas, donde la columna 1 serán los Id’s y la columna 
+2 serán las notas, TB_MATEMÁTICAS (500,2), se desea hacer:
+
+a)	Introducir un id y visualizar su nota.
+b)	Visualizar cuantos han suspendido y la nota máxima de la promoción.
+c)	Ordenar la tabla ascendentemente por los id´s (SHELL)
+d)	Introducir un id y visualizar su nota (Búsqueda DICOTÓMICA)
+e)	Introducir un cambio de en la columna notas colocándolo al final de la tabla con su respectivo id.
+f)	Visualizar la nota media de la Promoción y la nota media de los aprobados
+
+Inicio
+<cargat_tb>
+<busqueda desordenada>
+<suspenos y max>
+<shell> 
+<dicotomica>
+<desplazar>
+<medias>
+Fin
+
+<busqueda desordenada>
+Inicio
+  leer codigo
+  i=1
+  mientras tb_notas(i,1) !=codigo 
+    i=i+1
+  fin mientras
+  vusualizar "u nota es :"& tb_nota((i-1),2)
+Fin
+<suspenos y max>
+Inicio
+  para i de 1 a 500
+    si (tb_notas(i,2)<=4)
+      susp=susp+1
+    fin si
+    si ()
+  Fin_para
+Fin
+<medias>
+Inicio
+  para i de 1 a 500
+    aux=aux+tb_notas(i,2)
+    si(tb_notas(i,2)>4)
+      aux2=aux2+tb_notas(i,2)
+      cont=cont+1
+  Fin_para
+  aux/500
+  aux2/cont
+Fin
